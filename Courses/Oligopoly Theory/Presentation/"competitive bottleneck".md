@@ -1,0 +1,1 @@
+A term used to refer to the equilibrium in which all consumers single-home and all firms multi-home.
