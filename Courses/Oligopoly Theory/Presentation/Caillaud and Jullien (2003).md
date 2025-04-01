@@ -31,4 +31,4 @@ Utility of user *i* is given by: $U_i$= $(n_j)^k u_i (1-t^k) - (p_i)^k$
 
 Profit for match-maker is given by:  $\Pi^k = \sum_i \left[ n_i^k (p_i^k - c_i) \right] + \lambda n_1^k n_2^k t^k$ , $n_i$ are distribution of agents across match-makers. k= {I, E} (two match making sites)
 
-Prop 1: If only single homing is allowed, the only equilibrium are dominant firm equilibrium, where one intermediary firm *I* captures all users, charges maximal transaction fee ($t^i=1$), subsidies registration and makes zero profit. 
+**Proposition 1:** If only single homing is allowed, the only equilibrium are dominant firm equilibrium, where one intermediary firm *i* captures all users, charges maximal transaction fee ($t^i=1$), subsidies registration and makes zero profit. 
