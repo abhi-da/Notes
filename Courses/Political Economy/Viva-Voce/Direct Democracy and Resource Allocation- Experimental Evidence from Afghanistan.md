@@ -44,6 +44,14 @@ NSP was devised in 2002 by GOA to deliver services and infrastructure to rural s
 - The villagers need to contribute 10% of the project cost through labour. 
 - Approx 40% of the development council members and 70% of the development council heads were pre-existing heads. 
 
+#### Phasing of intervention and data collection
+
+- The baseline survey was administered in September 2007, prior to the assignment of allocation procedures. 
+- Development Council elections occurred between October 2007 and May 2008 and the resource allocation process took place between November 2007 and August 2008.
+- Both Development council members and the resource allocation process were monitored.
+- The mid-line survey was administered between June and October 2009 following the start of project implementation. 
+- The end-line survey was administered between May and October 2011, at which time 99% of NSP funded projects on sample villages were completed.
+- Data on location of NSP and non-NSP projects was collected between June and November 2011.
 
 ## Experimental Design
 
@@ -87,10 +95,8 @@ To identify the effects of direct democracy on four sets of outcomes of interest
 - The null hypothesis in a chi-square test states that **there is no significant difference or association between the observed frequencies in a categorical dataset**.
 - Chi-square test of independence, the null hypothesis is, **There is no association between the two categorical variables** and Chi-Square goodness-of-fit test, the hypothesis is **The observed frequencies match the expected frequencies.**
 - If the p-value is sufficiently small, the null hypothesis is rejected. Or if the Chi-square statistic is sufficiently large compared to the critical value. 
-- 
 
 
+###### Project Location
 
-
-
-
+The placement of a well for drinking water outside the house of the village headman, for instance, would disadvantage villagers living in other parts of the village. In order to estimate the effect of referenda on the location of projects vis-a-vis the residence of local elites, the authors collected the GPS coordinates of the development project in sample village during the endline survey that was administrated after the completion of development projects in 2011. 
