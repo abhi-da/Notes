@@ -91,3 +91,24 @@ There are also literature which has considered endogenous homing, [[Armstrong an
 - So having a firm available on both the platforms doesn't provide any extra benefits to the consumer. 
 - Also, if a consumer joins two platforms, the intrinsic benefit from the second platform diminishes and hence the stand-alone marginal benefit is just $(1+\delta)v$ , $\delta \in [0,1]$. 
 
+#### Side 2 - Firms 
+
+- Firms on side 2 draw their type $\theta_2$ from the distribution $F_2$ on support $[0,1]$. Similar to side 1, we normalise $F_2$ to be uniform distribution over $[0,1]$, so that mass of type $\theta_2$ firms is given by $\theta_2.\bar{N}_2$ 
+- All firm's outside option is 0.
+- Firm's payoff from single homing is given by, $u_2^{\mathbf{X}}(\theta_2)=\alpha_2(\theta_2).n_1^\mathbf{X} - c - p_2^\mathbf{X}$.
+- Firms are heterogeneous in their marginal benefits from consumers. 
+- The network effect(marginal benefit) to a consumer of type $\theta_2$ for an additional consumer on the platform is constant and given by $\alpha_2(\theta_2)$ .
+- $\alpha_2(\theta_2)$ is decreasing in type $\theta_2$. That is, firms whose type $\theta_2$ is close to zero have marginal benefits that are high relative to those firms whose type is located far from zero. 
+- $p_2^\mathbf{X}$ is the price paid by the firm to platform $\mathbf{X}$.
+- Firm incur cost $c>0$ to join the platform. This cost reflects the cost of coding, programming, formatting their product to list in the platform, etc. 
+- Firms are homogeneous with respect to their development and synchronisation cost.
+- A firm which multi-homes has payoff, $u_2^M(\theta_2)=\alpha_2(\theta_2).N_1-(1+\sigma).c -p_2^A - p_2^B$ 
+- Where $N_1= n_1^A+n_1^B-n_1^M$ , $n_1^A$ denotes number of consumer joining platform A, $n_2^B$ denotes number of firm joining platform B and $n_1^A$ denotes the number joining both the platforms. The firm only cares about number of distinct consumers present in the platforms. 
+- When a firm multi-homes, that is participate in two platforms, its synchronisation and development cost diminishes to $\sigma c$, with $\sigma \in [0,1]$ 
+- Imagine the smartphone brand "Nothing" listing its product on both Amazon and Flipkart, now once a code has been written, with slight modification of the code, the same can be used in Flipkart too.  
+- The authors coins the term $\sigma$ representing the amount of "duplication economies" that exists when synchronising an app or game to a second platform.
+- If $\sigma=1$, there exists no "duplication economies" and as $\sigma$ decreases, there exists "economies of duplication".
+
+#### Strategies and Equilibrium Concept
+
+The paper focuses exclusively for [[Pure strategies]] and solves for the [[Subgame Perfect Nash Equilibrium]] . The authors exclusively focuses on prices  for which platforms have  not priced themselves out of the market. If the authors would have removed this restriction, the allocation equilibria would require making a distinction between prices in ranges in which agents participate and ranges where agents do not participate, as the latter is dominated in platform pricing game, they are not used in the equilibrium. 
