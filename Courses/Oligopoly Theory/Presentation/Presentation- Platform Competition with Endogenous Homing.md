@@ -112,3 +112,17 @@ There are also literature which has considered endogenous homing, [[Armstrong an
 #### Strategies and Equilibrium Concept
 
 The paper focuses exclusively for [[Pure strategies]] and solves for the [[Subgame Perfect Nash Equilibrium]] . The authors exclusively focuses on prices  for which platforms have  not priced themselves out of the market. If the authors would have removed this restriction, the allocation equilibria would require making a distinction between prices in ranges in which agents participate and ranges where agents do not participate, as the latter is dominated in platform pricing game, they are not used in the equilibrium. 
+
+There are strategic complementarities across the two side of the platform(More consumers participate, higher is the profit for firms. More firms participate, higher is the utility for consumers), for any given set of prices chosen by the platform, multiple allocation equilibrium configurations can exist in the allocation sub-game. 
+
+To reduce multiplicity (simplifying or consolidating elements in a system (e.g., a mathematical, computational, or conceptual model) to avoid excessive complexity caused by redundant or overlapping components) of the model, the authors restrict the set of allocation to set of "meaningful" equilibria. They rule out the following equilibria: 
+- The no-trade subgame equilibrium where no consumers and no firms join any platform is ruled [[out and off path]], whenever there exists some equilibrium where some firms and consumers participate. 
+- Agents beliefs about allocations (after observing prices) are important determinants of equilibria. However, where the observed prices do not impact agent beliefs about allocations, then a price advantage of one platform on both sides of the market need not rule out the allocation where all agents tip to the higher priced alternative platform as an equilibrium. Which basically means that if price is not an important determinant to decide allocation, users (firm or consumers) will join a platform which has higher user base irrespective of the price the platform charges. For example, If 50 sellers are available on Amazon and 20 sellers are Flipkart, if consumer doesn't care about prices charged by the platform, they will join Amazon due to higher seller base. Conversely, if users believe higher price on side $i$ will earn no participation on that side, then price undercutting on both sides always generates a unique equilibrium allocation where users tip to the lower priced platform.  For example, if for Amazon , the buyer side price is high than Flipkart, the sellers would think, no one is going to join Amazon and both will move to the cheaper platform. (Tip means winner takes all).
+
+The authors make the following assumption: If Platform Y has prices that are strictly better on one side of the platform and no worse on the other ($p_i^Y<p_i^X$ and $p_j^Y \geq p_j^X$ for $j \neq i$ ), then platform $Y$ has $n_k^Y > n_k^X$ for some $n=1,2$. The authors preclude discoordinated allocation configurations in which despite having better (lower) prices, a platform fails to attract more agent than its rival on at least one side of the platform. The assumption says nothing about which side has greater participation. 
+
+
+#### Equilibrium 
+
+Below is the summary of equilibrium results. We will go one by one into finding the equilibrium. 
+![[presentation_oligopoly.png]]
