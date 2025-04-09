@@ -125,4 +125,4 @@ The authors make the following assumption: If Platform Y has prices that are str
 #### Equilibrium 
 
 Below is the summary of equilibrium results. We will go one by one into finding the equilibrium.
-![[attachments/equilibrium_summary.png]]
+![](attachments/equilibrium_summary.png)
