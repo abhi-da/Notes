@@ -126,3 +126,11 @@ The authors make the following assumption: If Platform Y has prices that are str
 
 Below is the summary of equilibrium results. We will go one by one into finding the equilibrium.
 ![](attachments/equilibrium_summary.png)
+
+First, the authors see how the allocation of consumers and firms in joining platform for arbitrary price looks like. And then they determine the pricing equilibria for the entire game by considering price competition between two platforms. 
+
+###### The Allocation Equilibrium for Arbitrary Prices
+
+Define, $s_1=\delta v$ and $s_2=-\sigma c$ , so $s_i$ denotes the threshold utility for joining a second platform when that platform has no participation on other side of the market.
+
+In addition, let $w_1=\delta v + \alpha_1(0).\frac{\bar{N_2}}{2}>s_1$ and $w_2=-\sigma c + \alpha_1(0).\frac{\bar{N_1}}{2}>s_2$ , $w_i$ captures the maximum benefit to a side $i$ agent from joining a second platform when the platforms split participation equally on the other side of the market. 
