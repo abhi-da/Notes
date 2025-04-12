@@ -119,7 +119,7 @@ To reduce multiplicity (simplifying or consolidating elements in a system (e.g.,
 - The no-trade subgame equilibrium where no consumers and no firms join any platform is ruled [[out and off path]], whenever there exists some equilibrium where some firms and consumers participate. 
 - Agents beliefs about allocations (after observing prices) are important determinants of equilibria. However, where the observed prices do not impact agent beliefs about allocations, then a price advantage of one platform on both sides of the market need not rule out the allocation where all agents tip to the higher priced alternative platform as an equilibrium. Which basically means that if price is not an important determinant to decide allocation, users (firm or consumers) will join a platform which has higher user base irrespective of the price the platform charges. For example, If 50 sellers are available on Amazon and 20 sellers are Flipkart, if consumer doesn't care about prices charged by the platform, they will join Amazon due to higher seller base. Conversely, if users believe higher price on side $i$ will earn no participation on that side, then price undercutting on both sides always generates a unique equilibrium allocation where users tip to the lower priced platform.  For example, if for Amazon , the buyer side price is high than Flipkart, the sellers would think, no one is going to join Amazon and both will move to the cheaper platform. (Tip means winner takes all).
 
-The authors make the following assumption: If Platform Y has prices that are strictly better on one side of the platform and no worse on the other ($p_i^Y<p_i^X$ and $p_j^Y \geq p_j^X$ for $j \neq i$ ), then platform $Y$ has $n_k^Y > n_k^X$ for some $n=1,2$. The authors preclude discoordinated allocation configurations in which despite having better (lower) prices, a platform fails to attract more agent than its rival on at least one side of the platform. The assumption says nothing about which side has greater participation. 
+The authors make the following assumption: **If Platform Y has prices that are strictly better on one side of the platform and no worse on the other ($p_i^Y<p_i^X$ and $p_j^Y \geq p_j^X$ for $j \neq i$ ), then platform $Y$ has $n_k^Y > n_k^X$ for some $n=1,2$.** The authors preclude dis-coordinated allocation configurations in which despite having better (lower) prices, a platform fails to attract more agent than its rival on at least one side of the platform. The assumption says nothing about which side has greater participation. 
 
 
 #### Equilibrium 
@@ -134,3 +134,13 @@ First, the authors see how the allocation of consumers and firms in joining plat
 Define, $s_1=\delta v$ and $s_2=-\sigma c$ , so $s_i$ denotes the threshold utility for joining a second platform when that platform has no participation on other side of the market.
 
 In addition, let $w_1=\delta v + \alpha_1(0).\frac{\bar{N_2}}{2}>s_1$ and $w_2=-\sigma c + \alpha_1(0).\frac{\bar{N_1}}{2}>s_2$ , $w_i$ captures the maximum benefit to a side $i$ agent from joining a second platform when the platforms split participation equally on the other side of the market. 
+
+> **Lemma 1 (Allocations with a Lower Priced Platform):** Suppose that $s_i<p_i*X$ and $p_i^X \leq p_i^X$ for $i=1,2$ with at least one inequality being strict. If $p_i^Y<p_i^X$ for $i=1,2$ or if $p_i^Y<w_i<p_i^X$  and $p_j^Y=p_j^X$ for $i=1,2$ and $j\neq i$, then there exists a unique allocation equilibrium in which all active agents join Platform Y exclusively: $n_i^Y=N_i$ and $n_i^X=0$, for $i=1,2$. '
+> If $p_i^Y<p_i^X<w_i$  and $p_j^Y=p_j^X$ for $i=1,2$ and $j \neq i$, then tipping to platform Y is an equilibrium. In addition, there exists equilibrium allocations where all active Side $i$ agents multi-home $(n_i^X=n_i^Y=n_i^M)$ and the side $j$ agents single home so that $n_j^Y>n_j^X$
+
+Proof: 
+Without loss of generality, Let us assume, $i=1(consumers)$ $\text{and}$ $j=2(firms)$ and $X=Platform(A), Y=Platform(B)$.
+
+Given, ($s_1<p_1^A;\delta v<p_1^A$) & ($p_1^B<p_1^A$ and $p_2^B \leq p_2^A$ ) 
+
+*Case 1:* 
