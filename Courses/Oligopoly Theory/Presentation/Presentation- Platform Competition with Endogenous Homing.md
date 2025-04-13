@@ -151,6 +151,8 @@ Given, $p_1^B < p_1^A$ and $p_2^B<p_2^A$, by assumption of dis-coordinated equil
 So, $u_2^A= \alpha_2(\theta_2).n_1^A - c -p_2^A$ and $u_2^B= \alpha_2(\theta_2).n_1^B - c -p_2^B$ . Clearly $u_2^B>u_2^A$ and $u_2^B>u_2^M$(This is because at beginning, firms single home, like we assumed, $n_1^B>n_1^A$ , Here, no consumer is multi-homing, it just showed number of consumer in platform B is higher than platform A ) So, all firms join platform B: $n_2^B=N_2$ . This with $p_1^B<p_1^A$ implies that $u_1^B(\theta_2)>u_1^A(\theta_2)$. 
 $u_1^A(\theta_1)= 1+\alpha_1(\theta_1).n_2^A-p_1^A=1+\alpha_1(\theta_1).0-p_1^A=1+p_1^A$  and $u_1^B(\theta_1)= 1+\alpha_1(\theta_1).n_2^B-p_1^B$. Clearly, $u_1^B>u_1^A$ and $u_1^B>u_1^A$ , hence, all consumers join B. Given this, this is an equilibrium, as no agent has any incentive to deviate. The condition, $s_i<p_i^A$ prevents multi-homing. Because there are no agents on platform A, by deviating to platform B, agent pays higher cost than the benefit they receive. 
 
-However, I had this question in mind, why $u_2^M(\theta_2)<u_2^Y(\theta_2) \quad \forall \quad \theta_2$. There would be some values of $\theta_2$ and $n_1^X$ for which $u_2^M > u_2^M$. 
+==However, I had this question in mind, why $u_2^M(\theta_2)<u_2^Y(\theta_2) \quad \forall \quad \theta_2$. There would be some values of $\theta_2$ and $n_1^X$ for which $u_2^M > u_2^M$.== 
 
-*Case 2:* If $p_i^B<w_i<p_i^A$ and $p_j^B=p_j^A$ for $i=1,2$ and $j \neq i$ , then there exists a unique equilibrium in which all active agents join platform B. 
+*Case 2:* 
+
+If $p_i^B<w_i<p_i^A$ and $p_j^B=p_j^A$ for $i=1,2$ and $j \neq i$ , then there exists a unique equilibrium in which all active agents join platform B. 
