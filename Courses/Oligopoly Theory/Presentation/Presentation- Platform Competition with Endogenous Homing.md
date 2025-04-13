@@ -138,14 +138,19 @@ In addition, let $w_1=\delta v + \alpha_1(0).\frac{\bar{N_2}}{2}>s_1$ and $w_2=-
 > **Lemma 1 (Allocations with a Lower Priced Platform):** Suppose that $s_i<p_i^X$ and $p_i^X \leq p_i^X$ for $i=1,2$ with at least one inequality being strict. If $p_i^Y<p_i^X$ for $i=1,2$ or if $p_i^Y<w_i<p_i^X$  and $p_j^Y=p_j^X$ for $i=1,2$ and $j\neq i$, then there exists a unique allocation equilibrium in which all active agents join Platform Y exclusively: $n_i^Y=N_i$ and $n_i^X=0$, for $i=1,2$. '
 > If $p_i^Y<p_i^X<w_i$  and $p_j^Y=p_j^X$ for $i=1,2$ and $j \neq i$, then tipping to platform Y is an equilibrium. In addition, there exists equilibrium allocations where all active Side $i$ agents multi-home $(n_i^X=n_i^Y=n_i^M)$ and the side $j$ agents single home so that $n_j^Y>n_j^X$
 
-Proof: 
+**Proof:** 
 Without loss of generality, Let us assume, $i=1(consumers)$ $\text{and}$ $j=2(firms)$ and $X=Platform(A), Y=Platform(B)$.
 
-Given, ($s_1<p_1^A;s_2 <p_2^A$) & ($p_1^B<p_1^A$ and $p_2^B \leq p_2^A$ , ) 
+Given, ($s_1<p_1^A;s_2 <p_2^A$) & ($p_1^B<p_1^A$ and $p_2^B \leq p_2^A$ ) 
 
-*Case 1:* If ($p_1^B < p_1^A$ and $p_2^B<p_2^A$),  that is prices on both the sides are strictly lesser in Platform B than in Platform A. The equilibrium is- *All active agents join Platform B* 
+*Case 1:* 
+
+If ($p_1^B < p_1^A$ and $p_2^B<p_2^A$),  that is prices on both the sides are strictly lesser in Platform B than in Platform A. The equilibrium is- *All active agents join Platform B* 
+
 Given, $p_1^B < p_1^A$ and $p_2^B<p_2^A$, by assumption of dis-coordinated equilibrium, $n_k^B>n_k^A$, where $k=1$  or $2$. Without loss of generality, $n_1^B>n_1^A$. 
 So, $u_2^A= \alpha_2(\theta_2).n_1^A - c -p_2^A$ and $u_2^B= \alpha_2(\theta_2).n_1^B - c -p_2^B$ . Clearly $u_2^B>u_2^A$ and $u_2^B>u_2^M$(This is because at beginning, firms single home, like we assumed, $n_1^B>n_1^A$ , Here, no consumer is multi-homing, it just showed number of consumer in platform B is higher than platform A ) So, all firms join platform B: $n_2^B=N_2$ . This with $p_1^B<p_1^A$ implies that $u_1^B(\theta_2)>u_1^A(\theta_2)$. 
 $u_1^A(\theta_1)= 1+\alpha_1(\theta_1).n_2^A-p_1^A=1+\alpha_1(\theta_1).0-p_1^A=1+p_1^A$  and $u_1^B(\theta_1)= 1+\alpha_1(\theta_1).n_2^B-p_1^B$. Clearly, $u_1^B>u_1^A$ and $u_1^B>u_1^A$ , hence, all consumers join B. Given this, this is an equilibrium, as no agent has any incentive to deviate. The condition, $s_i<p_i^A$ prevents multi-homing. Because there are no agents on platform A, by deviating to platform B, agent pays higher cost than the benefit they receive. 
 
-*Case 2:* If $p_i^B<w_i<p_i^A$ and $p_j^B=p_j^A$ 
+However, I had this question in mind, why $u_2^M(\theta_2)<u_2^Y(\theta_2) \quad \forall \quad \theta_2$. There would be some values of $\theta_2$ and $n_1^X$ for which $u_2^M > u_2^M$. 
+
+*Case 2:* If $p_i^B<w_i<p_i^A$ and $p_j^B=p_j^A$ for $i=1,2$ and $j \neq i$ , then there exists a unique equilibrium in which all active agents join platform B. 
