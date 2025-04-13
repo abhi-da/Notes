@@ -186,3 +186,12 @@ If prices are sufficiently low ($p_i^A<w_i$), then platform B must have lower pr
 >  2. There exists an equilibrium in which platform B only attracts multi-homing firms and platform A also attracts single homing firms, $n_2^M=n_2^B<n_2^X$, and high valued consumers single home on platform A, that is, $\theta_1 \in [0,\theta_1^A]$ where $n_1^A.\bar{N}_1$, and low valued consumers single-home on platform B, $\theta \in [\theta_1^A, \theta_1^* ]$ , where $N_1=\theta_1^*.\bar{N}_1$ and $n_1^B=N_1-n_1^A>n_1^A$. This allocation only exists when the consumer price difference is bounded and when the firm price difference is sufficiently large.
 >  3. Similarly, for firm prices sufficiently close together, there exists an equilibrium in which platform A only attracts multi-homing consumers whereas Platform B also attracts single homing consumers, $n_1^M=n_1^A<n_1^B$; and high value firms single-home on Platform B, that is $\theta_2 \in [0,\theta_2^B]$, where $n_2^B=\theta_2^B.\bar{N}_2$, and low-value firms single-home on Platform A, $\theta_2 \in [\theta_2^B, \theta_2^*]$, where $N_2=\theta_2^*.\bar{N}_2$ and $n_2^B=N_2-n_2^B>n_2^B$. This allocation only exists when the firm price difference is bounded and $p_2^B>w_2$. 
 
+Given, $p_1^A>p_1^B>s_1$, higher price charged for consumer by platform A; $p_2^B>p_2^A>s_2$, higher price charged for firms by platform B.
+
+**Case 1:** For tipping to platform B, all active firms and consumers must join platform B.
+***Case 1.1:*** For tipping to platform B, it must be that if all consumers join platform B, then all Firms must join platform B. 
+So, all active consumers joined platform B, that is, $n_1^B \geq n_1^M=n_1^A$.
+$u_2^B(\theta_2)=\alpha_2(\theta_2).n_1^B -c -p_2^B$ , $u_2^A(\theta_2)=\alpha_2(\theta_2).n_1^A -c -p_2^A$, and $u_2^M(\theta_2)=\alpha_2(\theta_2).n_1^B -c-\sigma c -p_2^B-p_2^A$. We can easily conclude that $u_2^B$ is the highest and hence, all active firms tip to platform B. No firm will distinctively join platform A or multi-home and for consumers, it makes no sense to multi-home too.
+
+Now, for Case 1 to hold, we would also need the following to hold.
+***Case 2.2:*** For tipping to platform B, it must be that if all firm join platform B, then all active consumers must join platform B. 
