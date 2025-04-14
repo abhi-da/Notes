@@ -188,10 +188,35 @@ If prices are sufficiently low ($p_i^A<w_i$), then platform B must have lower pr
 
 Given, $p_1^A>p_1^B>s_1$, higher price charged for consumer by platform A; $p_2^B>p_2^A>s_2$, higher price charged for firms by platform B.
 
-**Case 1:** For tipping to platform B, all active firms and consumers must join platform B.
+**Case 1:** For tipping to platform B, if all active firm joins platform B, then all active consumers joins platform B and vice versa.
 ***Case 1.1:*** For tipping to platform B, it must be that if all consumers join platform B, then all Firms must join platform B. 
-So, all active consumers joined platform B, that is, $n_1^B \geq n_1^M=n_1^A$.
-$u_2^B(\theta_2)=\alpha_2(\theta_2).n_1^B -c -p_2^B$ , $u_2^A(\theta_2)=\alpha_2(\theta_2).n_1^A -c -p_2^A$, and $u_2^M(\theta_2)=\alpha_2(\theta_2).n_1^B -c-\sigma c -p_2^B-p_2^A$. We can easily conclude that $u_2^B$ is the highest and hence, all active firms tip to platform B. No firm will distinctively join platform A or multi-home and for consumers, it makes no sense to multi-home too.
+So, all active consumers joined platform B, that is, consumers doesn't join Platform B distinctively.
+$u_2^B(\theta_2)=\alpha_2(\theta_2).n_1^B -c -p_2^B$ , $u_2^A(\theta_2)=\alpha_2(\theta_2).0 -c -p_2^A$, and $u_2^M(\theta_2)=\alpha_2(\theta_2).n_1^B -c-\sigma c -p_2^B-p_2^A$. We can easily conclude that $u_2^B$ is the highest and hence, all active firms tip to platform B. No firm will distinctively join platform A or multi-home and for consumers, it makes no sense to multi-home too.
 
 Now, for Case 1 to hold, we would also need the following to hold.
-***Case 2.2:*** For tipping to platform B, it must be that if all firm join platform B, then all active consumers must join platform B. 
+***Case 1.2:*** For tipping to platform B, it must be that if all firm join platform B, then all active consumers must join platform B. 
+The same logic as Case 1.1 applies. 
+All active firms tip to platform B, that is, No firm distinctively joins platform A.
+$u_1^B(\theta_1)= v+\alpha_1(\theta_1)n_2^B - p_1^B$, $u_1^M(\theta_1)= v+\delta v+\alpha_1(\theta_1)(n_2^B)-p_1^A - p_1^B$, $u_1^A(\theta_1)=v+\alpha_1(\theta_1).0 -p_1^A$. Clearly, $u_1^B(\theta_1)$ gives the highest utility.
+So case 2.2 holds true.
+So, for the given set of prices, to tip to platform B, the following condition holds true: if all active firms join platform B, then all consumers join platform B and vice versa.
+
+***Case 2:*** For tipping to platform A, if all firms exclusively join platform A, then all consumers exclusively join platform A and vice versa. 
+***Case 2.1:*** For tipping to platform A, if all consumers exclusively join platform A, then all firms exclusively join platform A. 
+$u_2^A(\theta_2)= \alpha_2(\theta_2).n_1^A-c-p_1^A$, $u_2^B(\theta_2)= \alpha_2(\theta_2).0-c-p_1^B$ and $u_2^M(\theta_2)= \alpha_2(\theta_2).n_1^A-c-\sigma c-p_1^A-p_1^B$. Clearly, $u_2^A(\theta_1$) gives the highest utility. So, all firms tip exclusively to Platform A.
+
+For Case 2 to hold, we also need the following to hold.
+***Case 2.2:*** For tipping to platform A, if all firms exclusively join platform A, then all firms exclusively join platform A.
+$u_1^A(\theta_1)= v+\alpha_1(\theta_1).n_2^A -p_1^A$, $u_1^B(\theta_1)= v+\alpha_1(\theta_1).0 -p_1^B$ and $u_1^M(\theta_1)= v+\delta v +\alpha_1(\theta_1).n_2^A -p_1^A-p_1^B$ . $u_1^A(\theta_1) is the highest if $p_1^B > v$ otherwise, if $p_1^B<v$ , then $p_1^A \leq p_1^B + \alpha_1(1).n_2^A$. Cause if the condition is true for consumer type $\theta_1=1$, then it is true for any type of consumer. 
+So Case 2.2 and Case 2 hold true, if $p_1^B>v$ , or if $p_1^B<v$ then $p_1^A \leq p_1^Y+\alpha_1(1)n_2^A$. And then tipping to platform A is an allocation equilibria. 
+
+This ends Lemma 2.1
+
+***Case 3:*** Given, $p_1^A>p_1^B>s_1$ and $p_2^B>p_2^A>s_2$. We can characterise the following allocation: 
+So the marginal consumer who's indifferent between Platform X and Platform Y is given by: 
+$u_1^X(\theta^X)=v+\alpha_1(\theta_1^X)n_2^X -p_1^X=v+\alpha_1(\theta_1^X)n_2^Y -p_1^Y=u_1^Y(\theta_1^X)$ . For the above to hold, certainly, the $n_2^X>n_2^Y$.For some $\theta_1^x, u_1^X(\theta_1^X)=u_1^Y(\theta_1^X)$. To the left of $\theta_1^X, u_1^Y(\theta_1^X)>u_1^X(\theta_1^X)$. To the right of $\theta_1^X, u_1^Y(\theta_1^X)<u_1^X(\theta_1^X)$. And $\theta_1^X.\bar{N}_1=n_1^X$ 
+
+Now arranging the types in ascending order, as $\theta_1$ increases, $\alpha_1(\theta_1) falls. Thus, the last consumer who would be joining the platform would join platform Y and type $\theta_1^*$ would be given by: $u_1^Y(\theta_1^*)=v+\alpha_1(\theta_1^*)-p_1^Y=0$. And, $\theta_1^*.\bar{N}_1=N_1$. So, $n_1^Y=N_1-n_1^X$.
+
+This can be seen in the figure: 
+![[attachments/Lemma 2.1.png]]
