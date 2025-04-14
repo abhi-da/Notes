@@ -224,11 +224,11 @@ This can be seen in the figure:
 Now coming to firm side, we have an allocation where all active firms join Platform X and while some multi-home but none distinctively join Platform Y. 
 I checked for $u_2^X(\theta_2)>u_2^Y(\theta_2)$, I found for this to happen, $n_1^X>n_1^Y$, but in the paper, the contrary is given. But now, let us assume by brute force, every firm joins platform X. And the last firm to do so is given by: $u_2^X(\theta_2)=\alpha_2(\theta_2)n_1^X-c-p_2^X=0 \implies  \alpha_2(\theta_2)n_1^X=c+p_2^X \implies \theta_2=\alpha_2^{-1}(\frac{c+p_2^X}{n_1^X})\implies n_2^X=\alpha_2^{-1}(\frac{c+p_2^X}{n_1^X})$ 
 $n_2^X=\theta_2.\bar{N}_2$. From here, we also get $p_2^X=\alpha_2(\theta_2)n_1^X -c$. 
-For multi-homing, $u_2^M(\theta_2)=\alpha_2(\theta_2)(n_1^x + n_1^Y)- \sigma -c\sigma - p_2^Y -p_2^X \implies \alpha_2(\theta_2)(n_1^Y)=p_2^Y + \sigma c \implies \alpha_2(\theta_2)= \frac{p_2^Y+\sigma c}{n_1^Y}, \theta_2=\alpha_2^{-1}(\frac{p_2^Y+\sigma c}{n_1^Y})$
+For multi-homing, $u_2^M(\theta_2)=\alpha_2(\theta_2)(n_1^X + n_1^Y)- \sigma -c\sigma - p_2^Y -p_2^X \implies \alpha_2(\theta_2)(n_1^Y)=p_2^Y + \sigma c \implies \alpha_2(\theta_2)= \frac{p_2^Y+\sigma c}{n_1^Y}, \theta_2=\alpha_2^{-1}(\frac{p_2^Y+\sigma c}{n_1^Y})$
 Thus, $n_2^Y=n_2^M=\alpha_2^{-1}(\frac{p_2^Y+\sigma c}{n_1^Y})$ .
 
 Now for this allocation to be equilibrium, it must be: (a) $n_2^X>n_2^Y$ and (b) $n_1^Y>n_1^X$. 
-Let's first discuss on (b) $n_1^Y>n_1^x$
+Let's first discuss on (b) $n_1^Y>n_1^X$ 
 Now we go back to the the situation when consumer of type $\theta_1^X$ was indifferent between Platform X and Platform Y. Let us write the equation again, $u_1^X(\theta^X)=v+\alpha_1(\theta_1^X)n_2^X -p_1^X=v+\alpha_1(\theta_1^X)n_2^Y -p_1^Y=u_1^Y(\theta_1^X)$. Here, it is given that, $p_1^X>p_1^Y$. So that for equality, we need, $n_2^X>n_2^Y$. Now, we can see, a lower $\theta_1^X$ gives high $\alpha_1(\theta_1^X)$, which means, it will increase the value of $n_2^X.p_1^X$, which means, a lower $n_1^X$ is good to occur if a consumer of type $\theta_1^X$ has to be indifferent between Platform A and Platform B. 
 $n_1^X>n_1^Y \implies n_1^X>N_1-n_1^X \implies n_1^X>N_1/2 \implies \theta_1^X.\bar{N}_1>\theta_1^z.\bar{N}_1/2 \implies \theta_1^X>\theta_1^z/2 \implies \theta_1^X>\bar{\theta_1}$ 
 So for (b) to hold, the above condition must hold. 
@@ -238,3 +238,8 @@ In addition, $n_1^Y=N_1-n_1^X$, and we got, $\frac{p_2Y+\sigma c}{p_2^X+c}>\frac
 $\implies \theta_1^X>\frac{\theta_1^z(p_2^X+c)}{p_2^Y+\sigma c+p_2^X+c} \implies \theta_1^X>\underline{\theta_1}$ . 
 
 (a) and (b) holds when $p_2^Y-p_2^X>(1-\sigma )c$ and $\theta_1^X \in [\underline{\theta_1}, \bar{\theta_1}]$ . 
+
+So, we have $\theta_1^X \in (\underline{\theta_1}, \bar{\theta_1} \iff (p_1^X-p_1^Y \in (\alpha(\bar{\theta_1}).n_2^X-n_2^Y),\alpha_1(\underline{\theta_1}).(n_2^X-n_2^Y))$ , which gives the bounds on the consumer preferences. 
+Also, we need to show that no single-homing consumer wants to multi-home. This follows from, $p_1^X, p_1^Y>s_1$ and $p_2^X, p_2^Y>s_2$ and $n_2^X=N_2 \implies u_1^X(\theta_1)>u_1^M(\theta_1) \forall \theta_1 \in [0,1]$ .
+
+***Case 4:*** It follows the same proof pattern., just replace sellers with customers and vice versa. 
