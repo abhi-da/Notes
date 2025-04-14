@@ -216,7 +216,13 @@ This ends Lemma 2.1
 So the marginal consumer who's indifferent between Platform X and Platform Y is given by: 
 $u_1^X(\theta^X)=v+\alpha_1(\theta_1^X)n_2^X -p_1^X=v+\alpha_1(\theta_1^X)n_2^Y -p_1^Y=u_1^Y(\theta_1^X)$ . For the above to hold, certainly, the $n_2^X>n_2^Y$.For some $\theta_1^x, u_1^X(\theta_1^X)=u_1^Y(\theta_1^X)$. To the left of $\theta_1^X, u_1^Y(\theta_1^X)>u_1^X(\theta_1^X)$. To the right of $\theta_1^X, u_1^Y(\theta_1^X)<u_1^X(\theta_1^X)$. And $\theta_1^X.\bar{N}_1=n_1^X$ 
 
-Now arranging the types in ascending order, as $\theta_1$ increases, $\alpha_1(\theta_1) falls. Thus, the last consumer who would be joining the platform would join platform Y and type $\theta_1^*$ would be given by: $u_1^Y(\theta_1^*)=v+\alpha_1(\theta_1^*)-p_1^Y=0$. And, $\theta_1^*.\bar{N}_1=N_1$. So, $n_1^Y=N_1-n_1^X$.
+Now arranging the types in ascending order, as $\theta_1$ increases, $\alpha_1(\theta_1)$ falls. Thus, the last consumer who would be joining the platform would join platform Y and type $\theta_1^*$ would be given by: $u_1^Y(\theta_1^*)=v+\alpha_1(\theta_1^*)-p_1^Y=0$. And, $\theta_1^*.\bar{N}_1=N_1$. So, $n_1^Y=N_1-n_1^X$.
 
 This can be seen in the figure: 
-![[attachments/Lemma 2.1.png]]
+![](attachments/lemma_.png)
+
+Now coming to firm side, we have an allocation where all active firms join Platform X and while some multi-home but none distinctively join Platform Y. 
+I checked for $u_2^X(\theta_2)>u_2^Y(\theta_2)$, I found for this to happen, $n_1^X>n_1^Y$, but in the paper, the contrary is given. But now, let us assume by brute force, every firm joins platform X. And the last firm to do so is given by: $u_2^X(\theta_2)=\alpha_2(\theta_2)n_1^X-c-p_2^X=0, \alpha_2(\theta_2)n_1^X=c+p_2^X, \theta_2=\alpha_2^{-1}(\frac{c+p_2^X}{n_1^X}), n_2^X=\alpha_2^{-1}(\frac{c+p_2^X}{n_1^X})$ 
+$n_2^X=\theta_2.\bar{N}_2$. From here, we also get $p_2^X=\alpha_2(\theta_2)n_1^X -c$. 
+For multi-homing, $u_2^M(\theta_2)=\alpha_2(\theta_2)(n_1^x + n_1^Y)- \sigma -c\sigma - p_2^Y -p_2^X , \alpha_2(\theta_2)(n_1^Y)=p_2^Y + \sigma c, \alpha_2^(\theta_2)= \frac{p_2^Y+\sigma c}{n_1^Y}, \theta_2=\alpha_2^{-1}(\frac{p_2^Y+\sigma c}{n_1^Y})$
+Thus, $n_2^Y=n_2^M=\alpha_2^{-1}(\frac{p_2^Y+\sigma c}{n_1^Y})$ 
