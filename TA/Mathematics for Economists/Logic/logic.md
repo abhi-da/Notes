@@ -61,7 +61,7 @@
 
 ## Implications (Conditional)
 
-- For statements $P$ and $Q$, the implication (or conditional) is the statement $$\text{If } P, \text{ then } Q$$. in such a acse the statemnt is called "Vacuously true". and is denoted by $P \Rightarrow Q$. We can also say, "$P$ implies $Q$."
+- For statements $P$ and $Q$, the implication (or conditional) is the statement $\text{If } P, \text{ then } Q$. in such a acse the statemnt is called "Vacuously true". and is denoted by $P \Rightarrow Q$. We can also say, "$P$ implies $Q$."
 - $P \Rightarrow Q$ is false only when $P$ is true and $Q$ is false ($P \Rightarrow Q$ is true otherwise).
 - For $P_1$: The integer 3 is odd. and $P_2$: The integer 57 is prime., the implication $P_1 \Rightarrow P_2 \text{: If 3 is an odd integer, then 57 is prime.}$ is a false statement. The implication,$P_2 \Rightarrow P_1 \text{: If 57 is prime, then 3 is odd.}$ is true.
 
@@ -267,7 +267,7 @@ For statements $P$, $Q$ and $R$, Thefollowing are logically equivalent.
 
 ## Quantified Statements- There Exists
 
-- Each of the phrases "there exists," "there is," "for some," and "for at least one" is referred to as an **existential quantifier** and is denoted by the symbol $\exists$. The quantified statement $$ \exists x \in S, P(x) $$ can be expressed in words by "There exists $x \in S$ such that $P(x)$."
+- Each of the phrases "there exists," "there is," "for some," and "for at least one" is referred to as an **existential quantifier** and is denoted by the symbol $\exists$. The quantified statement $ \exists x \in S, P(x) $ can be expressed in words by "There exists $x \in S$ such that $P(x)$."
 - An open sentence can be converted into a statement, namely by a method called quantification.
 - The existential quantifier is used to claim that at least one statement resulting from a given open sentence is true when the values of a variable are assigned from its domain. We know that for an open sentence $P(x)$ over a domain $S$, the quantified statement $\exists x \in S, P(x)$ is true provided $P(x)$ is a true statement for at least one element $x \in S$.
 
@@ -286,27 +286,35 @@ Consider the statement
 > For every two real numbers $x$ and $y$, $x^2 + y^2 \ge 0$.
 
 If we let $P(x, y) : x^2 + y^2 \ge 0$ where the domain of both $x$ and $y$ is $\mathbb{R}$, then this statement can be expressed as  
-$$ \forall x \in \mathbb{R}, \forall y \in \mathbb{R}, P(x, y) $$  
+$$\forall x \in \mathbb{R}, \forall y \in \mathbb{R}, P(x, y)$$  
 or as  
-$$ \forall y \in \mathbb{R}, \forall x \in \mathbb{R}, P(x, y), \quad \text{or as} \quad \forall x, y \in \mathbb{R}, P(x, y) \quad \text{or} \quad \forall y, x \in \mathbb{R}, P(x, y) $$  
+$$\forall y \in \mathbb{R}, \forall x \in \mathbb{R}, P(x, y), \quad \text{or as} \quad \forall x, y \in \mathbb{R}, P(x, y) \quad \text{or} \quad \forall y, x \in \mathbb{R}, P(x, y)$$  
 since quantifiers of the same type commute. Since $x^2 \ge 0$ and $y^2 \ge 0$ for all real numbers $x$ and $y$, it follows that $x^2 + y^2 \ge 0$ and so $P(x, y)$ is true for all real numbers $x$ and $y$. Thus, this quantified statement is true.
 
 ---
 
-## Examples 9
+## Examples 9 (Negation)
 
-The negation of this statement is therefore  
+The negation of this statement is therefore:
+
 \begin{align*}
-    \neg (\forall x \in \mathbb{R}, \forall y \in \mathbb{R}, P(x, y)) &\equiv \exists x \in \mathbb{R}, \exists y \in \mathbb{R}, \neg P(x, y) \\
-    &\equiv \exists x, y \in \mathbb{R}, \neg P(x, y)
-\end{align*}  
+\neg (\forall x \in \mathbb{R}, \forall y \in \mathbb{R}, P(x, y)) &\equiv \exists x \in \mathbb{R}, \exists y \in \mathbb{R}, \neg P(x, y) \\
+&\equiv \exists x, y \in \mathbb{R}, \neg P(x, y)
+\end{align*}
+
 which, in words, is  
 > There exist real numbers $x$ and $y$ such that $x^2 + y^2 < 0$.
 
 The resulting statement is therefore false.
 
-For an open sentence containing two variables, the domains of the variables need not be the same.
-
+**Note:** For an open sentence containing two variables, the domains of the variables need not be the same.
+### Exercises
 State the negations of the following quantified statements:
-1. For every rational number $r$, the number $1/r$ is rational.
-2. There exists a rational number $r$ such that $r^2 = 2$.
+
+1. For every rational number $r$, the number $1/r$ is rational.  
+   **Negation:**  
+   $\neg (\forall r \in \mathbb{Q}, 1/r \in \mathbb{Q}) \equiv \exists r \in \mathbb{Q}, 1/r \notin \mathbb{Q}$
+
+2. There exists a rational number $r$ such that $r^2 = 2$.  
+   **Negation:**  
+   $\neg (\exists r \in \mathbb{Q}, r^2 = 2) \equiv \forall r \in \mathbb{Q}, r^2 \neq 2$
