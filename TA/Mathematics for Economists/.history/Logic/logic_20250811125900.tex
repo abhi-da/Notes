@@ -1,0 +1,119 @@
+\documentclass{beamer}
+\usetheme{CambridgeUS}
+
+\title{Logic}
+\author{Abhijeet}
+\institute{IGIDR}
+\date{\today}
+
+\begin{document}
+
+\begin{frame}[plain]
+  \titlepage
+\end{frame}
+
+\begin{frame}{Statements}
+\begin{itemize}
+    \item \textbf{Statements} are declarative or an assertion that is either true or false (but not both).
+    \item (a) The integer 3 is odd. (b) The square root of 1 is 0. Both are statements. The former is true, the latter is false.
+    \item For a sentence to be considered as a statement, it is not necessary that we know the truth value of the statement.
+    \item The possible truth value of a \textbf{statement} can be listed in a truth table. The following is an example:
+\end{itemize}
+
+\begin{center}
+\begin{tabular}{|c|c|c|c|c|c|c|c|c|}
+    \hline
+    $P$ & T & T & T & T & F & F & F & F \\
+    \hline
+    $Q$ & T & T & F & F & T & T & F & F \\
+    \hline
+    $R$ & T & F & T & F & T & F & T & F \\
+    \hline
+\end{tabular}
+\end{center}
+
+\end{frame}
+
+\begin{frame}{Negations}
+    \begin{itemize}
+    \item The \textbf{negation} of a statment \textbf{P} is the statement \textbf{not P}.
+    \item e.g., $P_{1}:$ The Sun rises in the east. $ \neg P_{1}:$ The Sun rises in the west. Statement $P_{1}$ is true while statment $ \neg P_{1}$ is false.
+    \item The negation of a \textbf{true} statement is always false and vice versa. 
+    \end{itemize}
+\begin{center}
+\begin{tabular}{|c|c|}
+    \hline
+    $P$ & $\neg P$ \\
+    \hline
+    T & F \\
+    F & T \\
+    \hline
+\end{tabular}
+\end{center}
+
+\end{frame}
+
+\begin{frame}{Disjunctions}
+    \begin{itemize}
+    \item The \textbf{disjunction} of the statement \textbf{P} and \textbf{Q} is the statement \textbf{P or Q} and is denoted by \textbf{P $\lor$ Q}.
+    \item The disjunction statment is true if either one of P and Q is true, or if both P and Q is true. 
+    \item For example, P: The integer 10 is even, Q: 5 is the cube root of 25. Here P is true and Q is false. The disjunction statement would be P$\lor$Q, which we would read, Either "The integer 10 is even" or "5 is a cube root of 25". And this disjunction statement is true, cause P is true. 
+    \end{itemize}
+    \begin{center}
+\begin{tabular}{|c|c|c|c|c|}
+    \hline
+    $P$ & T & T & F & F \\
+    \hline
+    $Q$ & T & F & T & F \\
+    \hline
+    $P \lor Q$ & T & T & T & F \\
+    \hline
+\end{tabular}
+\end{center}
+\end{frame}
+
+\begin{frame}{Conjunctions}
+    \begin{itemize}
+    \item The \textbf{conjunction} of the statement \textbf{P} and \textbf{Q} is the statement \textbf{P and Q} and is denoted by \textbf{P $\land$ Q}.
+    \item The conjunction statment is true when both P and Q are true, otherwise the conjunction statement is false.
+    \item For example, P: The integer 10 is even, Q: 5 is the cube root of 25. Here P is true and Q is false. The disjunction statement would be P$\land$Q, which we would read, "The integer 10 is even" and "5 is a cube root of 25". And this conjunction statement is False, cause Q is False.
+    \end{itemize}
+    \begin{center}
+\begin{tabular}{|c|c|c|c|c|}
+    \hline
+    $P$ & T & T & F & F \\
+    \hline
+    $Q$ & T & F & T & F \\
+    \hline
+    $P \lor Q$ & T & F & F & F \\
+    \hline
+\end{tabular}
+\end{center}
+\end{frame}
+
+
+\begin{frame}{Implications (Conditional)}
+    \begin{itemize}
+    \item For statements $P$ and $Q$, the implication (or conditional) is the statement
+    $$\text{If } P, \text{ then } Q$$
+    and is denoted by $P \Rightarrow Q$. We can also say, "$P$ implies $Q$."
+    \item $P \Rightarrow Q$ is false only when $P$ is true and $Q$ is false ($P \Rightarrow Q$ is true otherwise).
+    \item For $P_1$: The integer 3 is odd. and $P_2$: The integer 57 is prime., the implication
+    $P_1 \Rightarrow P_2 \text{: If 3 is an odd integer, then 57 is prime.}$
+    is a false statement. The implication,$P_2 \Rightarrow P_1 \text{: If 57 is prime, then 3 is odd.}$
+is true.
+    \end{itemize}
+    \begin{center}
+\begin{tabular}{|c|c|c|c|c|}
+    \hline
+    $P$ & T & T & F & F \\
+    \hline
+    $Q$ & T & F & T & F \\
+    \hline
+    $P \lor Q$ & T & F & F & F \\
+    \hline
+\end{tabular}
+\end{center}
+\end{frame}
+
+\end{document}

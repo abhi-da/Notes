@@ -1,0 +1,13 @@
+# Ignore everything by default
+*
+
+# Allow directories (so that files inside can be included)
+!*/
+
+# Whitelist .tex, .md, and .pdf files
+!*.tex
+!*.md
+!*.pdf
+
+# Whitelist .gitignore (optional, but recommended)
+!.gitignore
