@@ -1,0 +1,269 @@
+\documentclass{beamer}
+\usetheme{CambridgeUS}
+\usecolortheme{beaver} % Red-based color theme
+\setbeamertemplate{headline}{}
+% Packages
+\usepackage{amsmath,amssymb}
+\usepackage{graphicx}
+\usepackage{booktabs} % For professional tables
+\usepackage{array}
+\usepackage{graphicx}
+
+% Title page info
+\title{Mathematics for Economists}
+\subtitle{Proof Techniques }
+\author{Abhijeet}
+\institute{IGIDR}
+\date{\today}
+
+% ================================================
+\begin{document}
+
+% Title frame
+\begin{frame}
+    \titlepage
+\end{frame}
+
+% Table of contents
+\begin{frame}{Outline}
+    \tableofcontents
+\end{frame}
+
+% Section: Logic
+\section{Some Definitions}
+
+\begin{frame}{Some Definition}
+\begin{itemize}
+    \item An \textbf{axiom} is a true mathematical statement whose truth is
+    accepted without proof.
+    \item A \textbf{theorem} is a true mathematical statement whose truth can be
+    verified.
+    \item A \textbf{corollary} is a mathematical result that can be deduced
+    from, and is thereby a consequence of, some earlier result.
+    \item A \textbf{lemma} is a mathematical result that is useful in
+    establishing the truth of some other result.
+\end{itemize}
+\end{frame}
+
+% Section: Calculus
+\section{Direct Proof}
+
+\begin{frame}{Direct Proof}
+\begin{itemize}
+    \item A \textbf{direct proof} is a method of proving a mathematical
+    statement by a straightforward chain of logical deductions from known facts,
+    definitions, and previously established results, without assuming the
+    contrary of what is to be proved.
+    \item A \textbf{direct proof} is a structured way of proving a mathematical
+    statement of the form:
+\[
+P \implies Q
+\]
+where:
+\begin{itemize}
+    \item \( P \) is the \textbf{hypothesis} (assumption), and
+    \item \( Q \) is the \textbf{conclusion} (what we want to prove).
+\end{itemize}
+We assume $P(x)$ to be true and apply reasoning, definitions, and other results
+to conclude that $Q(x)$ is true.
+\end{itemize}
+\end{frame}
+
+
+
+
+\begin{frame}{Direct Proof: Example}
+\textbf{(1) Using Direct Proof method, prove that, if $n$ is even integer then
+$n^{2}$ is also even integer.}\\ \textbf{Proof:} We need to prove the claim is
+true given the assumption is true. What do we know about the assumption? We know
+that $n$ is even. So we can write $n=2k, k \in Z$. Now square it. We get,
+$n^{2}=4k^{2}=2 \times 2k^{2}$. Now $2k^{2}$ is an integer and that multiplied
+by 2 yield an even integer. QED\\ 
+
+\textbf{(2) Using Direct Proof Method, prove that, if $n$ is an odd integer,
+then $3n+7$ is an even integer.} \\ 
+\textbf{Proof:} We know $n$ is an odd integer. So we can write, $n=2k+1$, where
+$k \in Z$. Substituting the value of $n=2k+1$ in $3n+7$, we get, $6k+10=(2
+\times 3k+5)$, $3k+5$ is an ineteger, that multiplied by $2$ yield an even
+integer.  $6k+8=3n+7$, given $n=2k+1, k \in Z$ is even. QED 
+
+\end{frame}
+
+
+\section{Proof by Contrapositive}
+
+\begin{frame}{Proof by Contrapositive}
+\begin{itemize}
+    \item For statements \( P \) and \( Q \), the contrapositive of the
+    implication \( P \implies Q \) is the implication
+$
+\neg Q \implies \neg P
+$
+    \item For statements \( P \) and \( Q \), the contrapositive of the
+    implication \( P \implies Q \) is the implication
+$
+\neg Q \implies \neg P
+$
+\item If $Q$  is false, then $ P$ is also false.
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Proof by Contrapositive: Examples}
+\textbf{(1) Using proof by contrapositive, Prove that if $5x-7$ is even then $x$
+is odd.}\\ 
+
+\textbf{Proof:} We assume, $x$ to be not odd, that is $x$ is even, and we will
+try to prove that if $x$ is even then, $5x-7$ is odd. We can write, $x=2k, k \in
+Z$. So, $5x-7=10k-7=(2 \times 5k)+7$. Now even+odd will produce us odd. Thus,
+$(10k-7)=5x-7$ is odd. QED \\
+
+\textbf{(2)Let \( x \in \mathbb{Z} \). Then \( x^2 \) is even if and only if \(
+x \) is even:
+$
+x^2 \text{ is even} \iff x \text{ is even}
+$}
+
+\textbf{Proof:} In biconditional statements, we need to prove both ways, that is
+$A \implies B$ and($\wedge$) $B \implies A$\\ 
+So, (i) If $x^2$ is even then $x$ is even and (ii) If $x$ is even, then $x^2$ is
+even.\\ 
+
+\textbf{(3) Let $x \in Z$. If $5x-7$ is odd, then $9x+2$ is even.}
+\vspace{0.2cm}
+Sometimes, its not possible to prove a result by assuming values for all $x$.
+So, we divide into cases, like, $\text{Case 1:}$ If $x$ is even then $B$,
+$\textbf{Case 2:}$ If $x$ is odd then $B$.
+\end{frame}
+
+
+\section{Existence and Proof by Contradiction}
+
+\begin{frame}{Counter-examples}
+
+If the statement $\forall x \in S, R(x)$ is false, then there exists some
+element $x \in S$ for which $R(x)$ is false:  
+$\neg (\forall x \in S, R(x)) \equiv \exists x \in S \text{ such that } \neg
+R(x)$.  
+
+Such an element $x$ is called a \textbf{counter-example} of the (false)
+statement $\forall x \in S, R(x)$.  
+
+Finding a counter-example verifies that $\forall x \in S, R(x)$ is false.
+
+\end{frame}
+
+\begin{frame}{Counter-examples: Examples}
+\textbf{Disprove the statement:}  
+Let $n \in \mathbb{Z}$.  If $n^2 + 3n$ is even, then $n$ is odd.\\ 
+
+Take $n=2$. Now, $n^2 + 3n=10$, which is even but $n$ is odd. Hence, we disproved.
+
+\end{frame}
+
+\section{Proof by Contradiction}
+\begin{frame}{Proof by Contradiction}
+To prove a statement $P$, we assume the negation $\neg P$ and show that this leads to a contradiction.  
+That is, we show:
+\[
+\neg P \implies \text{False}
+\]
+Therefore, $P$ must be true.\\ 
+
+If $R$ is the quantified statement  
+\[
+R: \forall x \in S, \; P(x) \implies Q(x),
+\]
+then a proof by contradiction might begin with the assumption:  
+
+\textit{Assume, to the contrary, that there exists some element $x \in S$ for which $P(x)$ is true and $Q(x)$ is false}, i.e.,  
+\[
+\exists x \in S \text{ such that } P(x) \text{ is true and } Q(x) \text{ is false}.
+\]
+
+The remainder of the proof then consists of showing that this assumption leads to a contradiction.
+
+\end{frame}
+
+\begin{frame}{Proof by Contradiction: Examples}
+\textbf{(1) By using the method of 'Proof by contradiction', prove that: There is no smallest positive real number.}\\
+\textbf{(2) No odd integer can be expressed as the sum of three even integer.}\\
+\textbf{(3) Prove that if $x$ and $y$ are positive real numbers, then $
+\sqrt{x} + \sqrt{y} \neq \sqrt{2(x + y)}$}\\ 
+\textbf{(4) Prove that there do not exist three distinct real numbers $a$, $b$, and $c$ such that all of the numbers  $
+a + b + c, \quad ab, \quad ac, \quad bc, \quad abc$
+are equal.}
+\end{frame}
+
+
+\section{How to prove (and How not to): $\forall \in S, P(x) \implies Q(x)$}
+\begin{frame}{How to prove (and How not to): $\forall \in S, P(x) \implies Q(x)$}
+
+
+\scriptsize % reduces font size
+
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{|c|p{6cm}|p{6cm}|}
+\hline
+\textbf{No.} & \textbf{First Step of “Proof”} & \textbf{Remarks/Goal} \\
+\hline
+1 & Assume for an arbitrary element $x \in S$ that $P(x)$ is true. & A direct proof is being used. Show that $Q(x)$ is true for the element $x$. \\
+\hline
+2 & Assume for an arbitrary element $x \in S$ that $P(x)$ is false. & A mistake has been made. \\
+\hline
+3 & Assume for an arbitrary element $x \in S$ that $Q(x)$ is true. & A mistake has been made. \\
+\hline
+4 & Assume for an arbitrary element $x \in S$ that $Q(x)$ is false. & A proof by contrapositive is being used. Show that $P(x)$ is false for the element $x$. \\
+\hline
+5 & Assume for an arbitrary element $x \in S$ that $P(x)$ and $Q(x)$ are true. & A mistake has been made. \\
+\hline
+6 & Assume that there exists $x \in S$ such that $P(x)$ is true and $Q(x)$ is false. & A proof by contradiction is being used. Produce a contradiction. \\
+\hline
+7 & Assume that there exists $x \in S$ such that $P(x)$ is false and $Q(x)$ is true. & A mistake has been made. \\
+\hline
+8 & Assume that there exists $x \in S$ such that $P(x)$ and $Q(x)$ are false. & A proof by contradiction is being used. Produce a contradiction. \\
+\hline
+9 & Assume that there exists $x \in S$ such that $P(x) \implies Q(x)$ is true. & A mistake has been made. \\
+\hline
+10 & Assume that there exists $x \in S$ such that $P(x) \implies Q(x)$ is false. & A mistake has been made. \\
+\hline
+\end{tabular}%
+}
+
+\end{frame}
+\section{Proof by Mathematical Induction}
+
+\begin{frame}{Proof by Mathematical Induction}
+For each positive integer $n$, let $P(n)$ be a statement.  
+If 
+
+\begin{enumerate}
+    \item $P(1)$ is true, and
+    \item $\forall k \in \mathbb{N}, \; P(k) \implies P(k+1)$ is true,
+\end{enumerate}
+
+then $\forall n \in \mathbb{N}, \; P(n)$ is true.
+
+As a consequence of the Principle of Mathematical Induction, the quantified statement $\forall n \in \mathbb{N}, \; P(n)$ can be proved to be true if
+
+\begin{enumerate}
+    \item we can show that the statement $P(1)$ is true, and
+    \item we can establish the truth of the implication
+    \[
+    P(k) \implies P(k+1)
+    \]
+    for every positive integer $k$.
+\end{enumerate}
+
+\end{frame}
+
+\begin{frame}{Proof by Mathematical Induction: Examples}
+\textbf{Prove the following using Mathematical Induction:}
+\begin{itemize}
+    \item Find a formula for $1 + 4 + 7 + \cdots + (3n-2)$ for positive integers $n$, and verify your formula by mathematical induction.
+    \item Prove that $1 \cdot 3 + 2 \cdot 4 + 3 \cdot 5 + \cdots + n(n+2) = \frac{n(n+1)(2n+7)}{6}$ for every positive integer $n$.
+    \item Prove that $1 + 2 + 3 + \cdots + n = \frac{n(n+1)}{2}$ for every positive integer $n$.
+    \item Prove that $1^2 + 2^2 + \cdots + n^2 = \frac{n(n+1)(2n+1)}{6}$ for every positive integer $n$.
+\end{itemize}
+
+\end{frame}
+\end{document}

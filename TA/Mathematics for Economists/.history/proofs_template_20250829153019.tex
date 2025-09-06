@@ -1,0 +1,91 @@
+\documentclass{beamer}
+
+% Theme
+\usetheme{CambridgeUS}
+
+% Packages
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsthm}
+
+% Theorem environments
+\theoremstyle{plain}
+\newtheorem{theorem}{Theorem}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{proposition}[theorem]{Proposition}
+
+\theoremstyle{definition}
+\newtheorem{definition}{Definition}
+\newtheorem{example}{Example}
+
+\theoremstyle{remark}
+\newtheorem{remark}{Remark}
+
+% Title Information
+\title{Presentation on Mathematical Proofs}
+\author{Your Name}
+\institute{Your Institution}
+\date{\today}
+
+\begin{document}
+
+% Title Frame
+\begin{frame}
+    \titlepage
+\end{frame}
+
+% Table of Contents
+\begin{frame}{Outline}
+    \tableofcontents
+\end{frame}
+
+\section{Introduction}
+
+\begin{frame}{What is a Proof?}
+    \begin{definition}
+        A mathematical proof is a deductive argument for a mathematical statement, showing that the stated assumptions logically guarantee the conclusion.
+    \end{definition}
+    \begin{itemize}
+        \item It must be based on axioms and previously established statements.
+        \item The argument must be universally valid.
+    \end{itemize}
+\end{frame}
+
+\section{Example Proof}
+
+\begin{frame}{Theorem and Proof}
+    \begin{theorem}[Pythagorean Theorem]
+        For a right-angled triangle with legs of length $a$ and $b$ and hypotenuse of length $c$, the following relationship holds:
+        \[ a^2 + b^2 = c^2 \]
+    \end{theorem}
+
+    \begin{proof}
+        Consider a square with side length $a+b$. We can arrange four copies of the right-angled triangle in the corners of this square.
+        \begin{itemize}
+            \item The area of the large square is $(a+b)^2 = a^2 + 2ab + b^2$.
+            \item The area of the four triangles is $4 \times \frac{1}{2}ab = 2ab$.
+            \item The area of the inner square (formed by the hypotenuses) is $c^2$.
+        \end{itemize}
+        The area of the large square is also the sum of the areas of the four triangles and the inner square.
+        \begin{align*}
+            (a+b)^2 &= 4\left(\frac{1}{2}ab\right) + c^2 \\
+            a^2 + 2ab + b^2 &= 2ab + c^2 \\
+            a^2 + b^2 &= c^2
+        \end{align*}
+        This concludes the proof.
+    \end{proof}
+\end{frame}
+
+\section{Conclusion}
+
+\begin{frame}{Summary}
+    \begin{itemize}
+        \item We defined what a mathematical proof is.
+        \item We saw an example of a proof for the Pythagorean Theorem.
+        \item Beamer provides a great environment for presenting mathematical content.
+    \end{itemize}
+\end{frame}
+
+\end{document}
