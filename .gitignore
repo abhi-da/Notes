@@ -5,7 +5,7 @@
 !*/
 
 # Whitelist .tex, .md, and .pdf files
-!*.tex
+
 !*.md
 !*.pdf
 
